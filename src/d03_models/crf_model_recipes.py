@@ -139,7 +139,7 @@ def crf_model_recipe_tagger(recipe_sr):
         crf_data_final.append(X)
 
     tagger = pycrfsuite.Tagger()
-    tagger.open('../../data/04_models/crf_ing_final.model')
+    tagger.open('crf_ing_final.model')
 
     sr_labels = []
     for recipe in crf_data_final:
